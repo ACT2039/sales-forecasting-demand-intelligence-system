@@ -1,0 +1,8 @@
+# Streamlit core framework for deployment and UI rendering
+streamlit>=1.30.0
+
+# Data manipulation and ingestion for processing exported CSVs
+pandas>=2.0.0
+
+# Interactive charting and visualizations
+plotly>=5.18.0
