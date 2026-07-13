@@ -26,8 +26,12 @@ def main() -> None:
     # Sidebar project information and logo placeholder
     with st.sidebar:
         st.header("Project Info")
-        # Sidebar logo placeholder
-        st.image("https://via.placeholder.com/150?text=Logo", caption="Sidebar Logo Placeholder")
+        # Sidebar logo
+        logo_path = Path(__file__).resolve().parent / "assets" / "logo.png"
+        if logo_path.exists():
+            st.image(str(logo_path), use_container_width=True)
+        else:
+            st.image("https://via.placeholder.com/150?text=Logo", caption="Sidebar Logo Placeholder")
         st.markdown(
             """
             **Internship Project**
